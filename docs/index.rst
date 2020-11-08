@@ -7,4 +7,4 @@ Initial documentation only release.
     :maxdepth: 1
     :name: sky130-lib-foundry-io-top
 
-    docs/user_guide
+    user_guide
