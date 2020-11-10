@@ -21,8 +21,8 @@ VERSION 5.7 ;
 MACRO sky130_fd_io__top_refgen
   CLASS BLOCK ;
   FOREIGN sky130_fd_io__top_refgen ;
-  ORIGIN  0.035000  1.965000 ;
-  SIZE  83.87500 BY  233.1650 ;
+  ORIGIN  0.045000  1.965000 ;
+  SIZE  83.88500 BY  233.1650 ;
   PIN HLD_H_N
     PORT
       LAYER met2 ;

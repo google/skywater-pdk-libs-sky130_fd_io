@@ -24,6 +24,8 @@ MACRO sky130_fd_io__corner_bus_overlay
   ORIGIN  0.000000  0.000000 ;
   SIZE  200.0000 BY  203.6650 ;
   PIN AMUXBUS_A
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 56.790000 22.910000 59.770000 ;
@@ -34,6 +36,8 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
   END AMUXBUS_A
   PIN AMUXBUS_B
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 52.030000 20.935000 55.010000 ;
@@ -44,6 +48,8 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
   END AMUXBUS_B
   PIN VCCD
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 12.550000 3.785000 17.200000 ;
@@ -62,6 +68,8 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
   END VCCD
   PIN VCCHIB
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 5.700000 2.350000 11.150000 ;
@@ -80,6 +88,8 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
   END VCCHIB
   PIN VDDA
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 18.600000 1.470000 22.050000 ;
@@ -98,6 +108,8 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
   END VDDA
   PIN VDDIO
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 23.450000 1.525000 28.100000 ;
@@ -132,6 +144,8 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
   END VDDIO
   PIN VDDIO_Q
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 67.750000 1.480000 72.200000 ;
@@ -150,6 +164,8 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
   END VDDIO_Q
   PIN VSSA
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 40.400000 1.335000 43.850000 ;
@@ -192,7 +208,7 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
     PORT
       LAYER met5 ;
-        RECT 0.630000 55.685000 0.640000 55.695000 ;
+        RECT 0.630000 54.950000 0.640000 54.960000 ;
     END
     PORT
       LAYER met5 ;
@@ -204,10 +220,12 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
     PORT
       LAYER met5 ;
-        RECT 51.285000 0.630000 51.295000 0.640000 ;
+        RECT 52.020000 0.630000 52.030000 0.640000 ;
     END
   END VSSA
   PIN VSSD
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 45.250000 1.475000 49.900000 ;
@@ -226,6 +244,8 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
   END VSSD
   PIN VSSIO
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 179.450000 1.435000 203.665000 ;
@@ -268,6 +288,8 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
   END VSSIO
   PIN VSSIO_Q
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 61.900000 1.625000 66.350000 ;
@@ -286,6 +308,8 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
   END VSSIO_Q
   PIN VSWITCH
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 0.000000 35.550000 1.385000 39.000000 ;
