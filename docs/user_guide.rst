@@ -3,6 +3,7 @@ User Guide for :lib:`sky130_fd_io`
 
 Summary
 -------
+.. todo:: :cell:`sky130_fd_io__gpio` is not yet publicly available.
 
 This IP document includes two versions of a General Purpose I/O buffer (:cell:`sky130_fd_io__gpio`) with different feature sets,
 :cell:`sky130_fd_io__sio` macro (pair of Special I/O buffer (:cell:`sky130_fd_io__sio`) + REFerence GENerator (:cell:`sky130_fd_io__refgen`).
@@ -178,6 +179,9 @@ For this purpose, two types of ESD RC clamps will be developed - HV Clamp and LV
 
 Alternate XRES implementation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. todo:: Only :cell:`sky130_fd_io__top_xres4v2` is currently available.
+    :cell:`sky130_fd_io__top_xres_2` and :cell:`sky130_fd_io__top_axresv2` are not
+    yet available.
 
 The glitch filter and 5k pull-up resistor in the current :cell:`sky130_fd_io__top_xres_2` are provided as separate cells.
 A PMOS switch is used to disable the pull-up resistor.
@@ -211,6 +215,7 @@ The following sections describe each of the blocks in detail:
 
 Block Description
 ~~~~~~~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__gpio` is not yet publicly available.
 
 The SKY130 IO cells is a toolkit IP.
 It contains all the cells and primitives required to construct an I/O ring in the SKY130 technology.
@@ -227,6 +232,10 @@ A single table comparison of all features across different IO's is provided in :
 
 I/O\ [1]_ Common Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+.. todo:: Only :cell:`sky130_fd_io__gpiov2` and
+    :cell:`sky130_fd_io__gpio_ovtv2` are currently available.
+    :cell:`sky130_fd_io__gpio` and :cell:`sky130_fd_io__gpiosf` are not
+    yet publicly available.
 
 The :cell:`sky130_fd_io__gpio` and :cell:`sky130_fd_io__sio` buffers contain the following common features:
 
@@ -395,6 +404,9 @@ During the hold mode, the O/P can be configured to drive the PAD as described in
 
 I/O Mode Control Override during Power-up
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. todo:: Only :cell:`sky130_fd_io__gpiov2` and
+    :cell:`sky130_fd_io__gpio_ovtv2` are currently available.
+    :cell:`sky130_fd_io__gpio` is not yet publicly available.
 
 The :cell:`sky130_fd_io__gpio` includes an I/O mode control override signal ``enable_h`` that is different from the ``oe_n`` signal.
 The signal ``enable_h=0`` forces the output drive mode to Hi-Z.
@@ -470,6 +482,7 @@ The functionality is defined in :numref:`normal and hold modes`.
 
 :cell:`sky130_fd_io__gpio` Additional Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__gpio` is not yet publicly available.
 
 The block diagram for the :cell:`sky130_fd_io__gpio` is shown in :numref:`sky130_fd_io__top_gpio block diagram`.
 Note: Bus notation dm[3] denotes a 3 bit bus dm[2:0].
@@ -487,6 +500,7 @@ below:
 
 :cell:`sky130_fd_io__gpio` Analog Connectivity Modes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. todo:: :cell:`sky130_fd_io__gpio` is not yet publicly available.
 
 The M0S8 :cell:`sky130_fd_io__gpio` integrates the AMUXBUS switches to two ``AMUXBUS_A`` and ``AMUXBUS_B`` analog buses.
 These buses are used for both Capsense operation (as described in the CSD chapter), and general analog connectivity for Programmable Analog blocks and
@@ -540,6 +554,7 @@ Care must be taken that VSSIO and ``VSSIO_Q`` should not be shorted at VSSIO pad
 
 Changes to Analog Mux for :cell:`sky130_fd_io__gpiov2` and :cell:`sky130_fd_io__gpio_ovtv2`
 *******************************************************************************************
+.. todo:: :cell:`sky130_fd_io__gpio` is not yet publicly available.
 
 1. The input buffer is no longer disabled inside :cell:`sky130_fd_io__gpiov2` and :cell:`sky130_fd_io__gpio_ovtv2` automatically when analog mux is
    enabled (``analog_en=1``).
@@ -1135,6 +1150,7 @@ Use of ``dft_refgen`` for ADFT purpose:
 
 :cell:`sky130_fd_io__gpio_vrefv2` (Reference generator for Selectable trip point input buffer) Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__gpio_vrefv2` is not yet publicly available.
 
 This cell provides a reference (``vinref``) to the selectable trip point buffer in :cell:`sky130_fd_io__gpio_ovtv2`.
 This reference generator is a low-leakage resistive ladder whose tap points are selected based on the signaling required at the
@@ -1176,6 +1192,7 @@ vinref = (13n+184)\*VDDIO/600
 
 ::cell:`sky130_fd_io__top_vrefcapv2` Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__top_vrefcapv2` is not yet publicly available.
 
 This cell contains a unit capacitance (4pF) that is intended to be placed on the ``vinref`` node that goes to multiple :cell:`sky130_fd_io__gpio_ovtv2`
 cells.
@@ -1191,6 +1208,7 @@ The usage is shown below in :numref:`sky130_fd_io__top_vrefcapv2 block diagram`:
 
 :cell:`sky130_fd_io__top_amuxsplitv2` Features
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__top_amuxsplitv2` is not yet publicly available.
 
 The amux splitter cell is designed to provide large chips (with large number of :cell:`sky130_fd_io__gpio`'s) to break the analog mux into multiple segments.
 This cell is capable of grounding, disconnecting or feeding through each amuxbus.
@@ -1214,6 +1232,10 @@ When connecting ``amux_a_l`` and ``amux_a_r`` care must be taken to disconnect t
 
 PG pads (ESD)
 ~~~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__top_hvclamp_wopad`,
+    :cell:`sky130_fd_io__top_hvclamp_wopadv2`,
+    :cell:`sky130_fd_io__top_power_padonlyv2`, and
+    :cell:`sky130_fd_io__top_ground_padonlyv2` are not yet publicly available.
 
 The I/O library consists of Power (P) and Ground (G) pads that have RC ESD clamps embedded in them.
 There are two types of RC ESD clamps that are present in these PG pads.
@@ -1242,6 +1264,9 @@ They are used to provide pad structure/connection to wopad clamps.
 
 Integration Guidelines
 ^^^^^^^^^^^^^^^^^^^^^^
+.. todo:: Only :cell:`sky130_fd_io__gpiov2` and
+    :cell:`sky130_fd_io__gpio_ovtv2` are currently available.
+    :cell:`sky130_fd_io__gpio` is not yet publicly available.
 
 All power and ground pads have the I/O bussing running through them in M5/M4, thereby forming an I/O ring when abutted to each other.
 The power and ground pads can be abutted to either the :cell:`sky130_fd_io__gpio` or the :cell:`sky130_fd_io__sio_macro`.
@@ -1252,6 +1277,8 @@ This puts a restriction that 2 pads (power/ground) should be paired to build the
 
 ESD design details
 ~~~~~~~~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__top_hvclamp_wopad_sio` and
+    :cell:`sky130_fd_io__gpio` are not yet publicly available.
 
 The architecture for the RC ESD clamps trigger circuit is the simple one-time constant RC trigger circuit.
 For the over-voltage tolerant :cell:`sky130_fd_io__sio`, use ESD rail clamp :cell:`sky130_fd_io__top_hvclamp_wopad_sio`.
@@ -1268,6 +1295,9 @@ ESD HV RC ESD Clamp design
 
 Usage of Outer Guard ring Connection (OGC) in ESD HV and LV clamps for :lib:`sky130_fd_io`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. todo:: :cell:`sky130_fd_io__top_hvclamp_wopad`,
+    :cell:`sky130_fd_io__top_lvclamp_b2b_wopad`, and
+    :cell:`sky130_fd_io__top_lvclamp` are not yet publicly available.
 
 Power and Ground pads in :lib:`sky130_fd_io` library come along with ESD HV and LV clamps embedded within them.
 All the ESD clamps are independent of the power or ground pads providing maximum flexibility, thereby making the end user make proper connections to
@@ -1310,6 +1340,10 @@ The following :numref:`ogc connection` lists the different cells in :lib:`sky130
 
 XRES
 ~~~~
+.. todo:: Only :cell:`sky130_fd_io__top_xres4v2` is currently available.
+    :cell:`sky130_fd_io__top_xres`, :cell:`sky130_fd_io__top_xres_2`,
+    :cell:`sky130_fd_io__top_xres2v2`, :cell:`sky130_fd_io__top_xres3v2`, and
+    :cell:`sky130_fd_io__top_axresv2` are not yet available.
 
 The XRES cell is a macro that is used to influence the internal system wide reset.
 The purpose of this cell is to provide a noise free signal from the input buffer to the core.
@@ -1406,6 +1440,7 @@ This is a generic cell that can be abutted to most of the existing cells inside 
 
 Test Pads (TP1, TP2, TP3)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+.. todo:: None of the test pads (TP1, TP2, TP3) is currently publicly available.
 
 TP1 and TP2 are used to monitor the flash voltages.
 TP3 is an analog pad.
@@ -1525,6 +1560,7 @@ There are two kinds of overlays that exist in the :lib:`sky130_fd_io` I/O librar
 
 Power detector
 ~~~~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__top_pwrdet` is not yet publicly available.
 
 This cell is developed to detect vddd and vddio power supplies and to level shift the hv control signals across vddio<->vddd voltage domains.
 This cell is made of the following sub-blocks.
@@ -1708,6 +1744,7 @@ The user must connect the power and ground to the less noisy sources.
 
 :lib:`sky130_fd_io` Pin Information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__gpio` is not yet available.
 
 #. DFT, BIST Pins
 
@@ -1854,6 +1891,7 @@ There are two resets to the I/O blocks -
 
 Power Modes
 ~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__gpio` is not yet available.
 
 The :cell:`sky130_fd_io__gpio` and :cell:`sky130_fd_io__sio` buffers support multiple standby modes.
 The following tables list the input and output standby modes and their dependency on the related control inputs.
@@ -1929,6 +1967,7 @@ It is OK to float a supply while another is active though.
 
 Block behavioral model requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__gpio` is not yet available.
 
 The :cell:`sky130_fd_io__gpio` and :cell:`sky130_fd_io__sio` input buffers are operating from the vcchib supply.
 This means that the input buffer can operate even when vccd is taken down to 0 or floats.
@@ -1945,6 +1984,15 @@ Block Integration Requirements and Constraints
 
 General Integration Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. todo:: Only :cell:`sky130_fd_io__gpiov2` and
+    :cell:`sky130_fd_io__gpio_ovtv2` are currently available.
+    :cell:`sky130_fd_io__gpio` is not yet publicly available.
+
+.. todo:: Only :cell:`sky130_fd_io__top_xres4v2` is currently available.
+    :cell:`sky130_fd_io__top_xres`, :cell:`sky130_fd_io__top_xres_2`,
+    :cell:`sky130_fd_io__top_xres2v2`, :cell:`sky130_fd_io__top_xres3v2`, and
+    :cell:`sky130_fd_io__top_axresv2` are not yet available.
+
 
 The following is a list of items users must be aware of before using this IP.
 
@@ -1997,6 +2045,8 @@ The following is a list of items users must be aware of before using this IP.
 
 Scan Attributes to be used for :lib:`sky130_fd_io` cells
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. todo:: :cell:`sky130_fd_io__gpio` and :cell:`sky130_fd_io__top_amuxsplitv2`
+    are not yet available.
 
 :cell:`sky130_fd_io__gpio`'s can be used as SCAN IN and SCAN Out pads based on the configuration.
 

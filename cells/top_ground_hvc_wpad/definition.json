@@ -1,0 +1,113 @@
+{
+ "description": "Ground pad.",
+ "file_prefix": "sky130_fd_io__top_ground_hvc_wpad",
+ "library": "sky130_fd_io",
+ "name": "top_ground_hvc_wpad",
+ "parameters": [],
+ "ports": [
+  [
+   "signal",
+   "G_PAD",
+   "inout",
+   ""
+  ],
+  [
+   "signal",
+   "AMUXBUS_A",
+   "inout",
+   ""
+  ],
+  [
+   "signal",
+   "AMUXBUS_B",
+   "inout",
+   ""
+  ],
+  [
+   "power",
+   "OGC_HVC",
+   "inout",
+   "supply1"
+  ],
+  [
+   "power",
+   "DRN_HVC",
+   "inout",
+   "supply1"
+  ],
+  [
+   "power",
+   "SRC_BDY_HVC",
+   "inout",
+   "supply0"
+  ],
+  [
+   "power",
+   "G_CORE",
+   "inout",
+   "supply0"
+  ],
+  [
+   "power",
+   "VDDIO",
+   "inout",
+   "supply1"
+  ],
+  [
+   "power",
+   "VDDIO_Q",
+   "inout",
+   "supply1"
+  ],
+  [
+   "power",
+   "VDDA",
+   "inout",
+   "supply1"
+  ],
+  [
+   "power",
+   "VCCD",
+   "inout",
+   "supply1"
+  ],
+  [
+   "power",
+   "VSWITCH",
+   "inout",
+   "supply1"
+  ],
+  [
+   "power",
+   "VCCHIB",
+   "inout",
+   "supply1"
+  ],
+  [
+   "power",
+   "VSSA",
+   "inout",
+   "supply0"
+  ],
+  [
+   "power",
+   "VSSD",
+   "inout",
+   "supply0"
+  ],
+  [
+   "power",
+   "VSSIO_Q",
+   "inout",
+   "supply0"
+  ],
+  [
+   "power",
+   "VSSIO",
+   "inout",
+   "supply0"
+  ]
+ ],
+ "type": "cell",
+ "verilog_name": "sky130_fd_io__top_ground_hvc_wpad"
+}
