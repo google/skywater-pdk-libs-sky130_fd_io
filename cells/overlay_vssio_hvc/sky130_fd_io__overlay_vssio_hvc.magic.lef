@@ -19,7 +19,7 @@ VERSION 5.7 ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
 MACRO sky130_fd_io__overlay_vssio_hvc
-  CLASS BLOCK ;
+  CLASS PAD ;
   FOREIGN sky130_fd_io__overlay_vssio_hvc ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  75.00000 BY  200.0000 ;

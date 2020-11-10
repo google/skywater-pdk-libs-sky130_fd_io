@@ -19,11 +19,11 @@ VERSION 5.7 ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
 MACRO sky130_fd_io__overlay_gpiov2
-  CLASS COVER ;
+  CLASS PAD ;
   FOREIGN sky130_fd_io__overlay_gpiov2 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  80.00000 BY  200.0000 ;
-  SYMMETRY X Y ;
+  SYMMETRY X Y R90 ;
   PIN AMUXBUS_A
     USE SIGNAL ;
     PORT

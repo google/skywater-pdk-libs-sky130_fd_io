@@ -19,10 +19,11 @@ VERSION 5.7 ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
 MACRO sky130_fd_io__corner_bus_overlay
-  CLASS BLOCK ;
+  CLASS PAD ;
   FOREIGN sky130_fd_io__corner_bus_overlay ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  200.0000 BY  203.6650 ;
+  SYMMETRY X Y R90 ;
   PIN AMUXBUS_A
     DIRECTION INOUT ;
     USE SIGNAL ;
@@ -208,7 +209,7 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
     PORT
       LAYER met5 ;
-        RECT 0.630000 54.950000 0.640000 54.960000 ;
+        RECT 0.630000 55.685000 0.640000 55.695000 ;
     END
     PORT
       LAYER met5 ;
@@ -220,7 +221,7 @@ MACRO sky130_fd_io__corner_bus_overlay
     END
     PORT
       LAYER met5 ;
-        RECT 52.020000 0.630000 52.030000 0.640000 ;
+        RECT 51.285000 0.630000 51.295000 0.640000 ;
     END
   END VSSA
   PIN VSSD

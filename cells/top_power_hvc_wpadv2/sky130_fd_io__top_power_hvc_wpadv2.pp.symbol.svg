@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by Symbolator http://kevinpt.github.io/symbolator -->
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xml:space="preserve"
+width="258" height="554" viewBox="-59 -56 258.0 554.0" version="1.1">
+<style type="text/css">
+<![CDATA[
+.fnt1 { fill:#000000; font-family:Times; font-size:12pt; font-weight:normal; font-style:italic; }
+.fnt2 { fill:#000000; font-family:Helvetica; font-size:12pt; font-weight:normal; font-style:normal; }
+.fnt3 { fill:#000000; font-family:Helvetica; font-size:12pt; font-weight:normal; font-style:normal; text-decoration: overline; }
+.fnt4 { fill:#000000; font-family:Helvetica; font-size:16pt; font-weight:bold; font-style:normal; }
+.fnt5 { fill:#000000; font-family:Helvetica; font-size:10pt; font-style:normal; }
+.label {fill:#000;
+  text-anchor:middle;
+  font-size:16pt; font-weight:bold; font-family:Sans;}
+.link {fill: #0D47A1;}
+.link:hover {fill: #0D47A1; text-decoration:underline;}
+.link:visited {fill: #4A148C;}
+]]>
+</style>
+<defs>
+<marker id="arrow_fwd" markerWidth="8.0" markerHeight="8.0" viewBox="0 0 8.0 8.0" refX="3.2" refY="4.0" orient="auto" markerUnits="userSpaceOnUse">
+<g transform="translate(-0.0,4.0)"><path d="M 0 -4 C 2 -1, 2 1, 0 4 L 8 0 z" stroke="none" fill="#000000"/>
+</g>
+</marker>
+<marker id="arrow_back" markerWidth="8.0" markerHeight="8.0" viewBox="0 0 8.0 8.0" refX="4.8" refY="4.0" orient="auto" markerUnits="userSpaceOnUse">
+<g transform="translate(8.0,4.0)"><path d="M 0 -4 C -2 -1, -2 1, 0 4 L -8 0 z" stroke="none" fill="#000000"/>
+</g>
+</marker>
+</defs>
+<rect x="-59" y="-56" width="100%" height="100%" fill="white"/><g transform="translate(0,0)">
+<rect x="0" y="-21.0" width="140" height="61.0" stroke="#000000" fill="#CCFED2" stroke-width="1"/>
+<text class="fnt1" x="70.0" y="-5.0" text-anchor="middle" dy="5.5">Data Signals</text>
+<g transform="translate(140,19)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">P_PAD</text>
+</g>
+</g>
+<g transform="translate(0,61.0)">
+<rect x="0" y="-21.0" width="140" height="83.0" stroke="#000000" fill="#FFF6B1" stroke-width="1"/>
+<text class="fnt1" x="70.0" y="-5.0" text-anchor="middle" dy="5.5">Control Signals</text>
+<g transform="translate(140,19)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">AMUXBUS_A</text>
+</g>
+<g transform="translate(140,41)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<ellipse cx="3.0" cy="0.0" rx="3.0" ry="3.0" stroke="#000000" fill="#FFFFFF" stroke-width="1"/>
+<text class="fnt3" x="-10" y="0" text-anchor="end" dy="5.5">AMUXBUS</text>
+</g>
+</g>
+<g transform="translate(0,144.0)">
+<rect x="0" y="-21.0" width="140" height="347.0" stroke="#000000" fill="#FFBBBB" stroke-width="1"/>
+<text class="fnt1" x="70.0" y="-5.0" text-anchor="middle" dy="5.5">Power</text>
+<g transform="translate(140,19)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">VSWITCH</text>
+</g>
+<g transform="translate(140,41)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">DRN_HVC</text>
+</g>
+<g transform="translate(140,63)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">OGC_HVC</text>
+</g>
+<g transform="translate(140,85)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">P_CORE</text>
+</g>
+<g transform="translate(140,107)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">SRC_BDY_HVC</text>
+</g>
+<g transform="translate(140,129)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">VCCD</text>
+</g>
+<g transform="translate(140,151)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">VCCHIB</text>
+</g>
+<g transform="translate(140,173)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">VDDA</text>
+</g>
+<g transform="translate(140,195)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">VDDIO</text>
+</g>
+<g transform="translate(140,217)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">VDDIO_Q</text>
+</g>
+<g transform="translate(140,239)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">VSSA</text>
+</g>
+<g transform="translate(140,261)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">VSSD</text>
+</g>
+<g transform="translate(140,283)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">VSSIO</text>
+</g>
+<g transform="translate(140,305)">
+<line x1="16.16" y1="4.702643708725836e-16" x2="3.84" y2="-4.702643708725836e-16" stroke="#000000" fill="none" stroke-width="1" marker-start="url(#arrow_back)" marker-end="url(#arrow_fwd)"/>
+<text class="fnt2" x="-10" y="0" text-anchor="end" dy="5.5">VSSIO_Q</text>
+</g>
+</g>
+<rect x="1.0" y="-20.0" width="138.0" height="489.0" stroke="#000000" fill="none" stroke-width="3"/>
+<text class="fnt4" x="70.0" y="-30.0" text-anchor="middle" dy="-1.0">top_power_hvc_wpadv2</text>
+<text class="fnt5" x="70.0" y="489.0" text-anchor="middle" dy="1.0">sky130_fd_io</text>
+</svg>
