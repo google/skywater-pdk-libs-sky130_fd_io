@@ -636,12 +636,12 @@ begin
             ->event_error_enable_vddio;
             if (msg_count_pad <= MAX_WARNING_COUNT)
             begin
-                $display(" ===ERROR=== sky130_fd_io__top_gpio_ovtv2 :  Enable_h (= %b) and ENABLE_VDDIO (= %b) are complement of each \other. This is an illegal combination as ENABLE_VDDIO and ENABLE_H are the same input signals IN different power \domains %m", ENABLE_H, ENABLE_VDDIO, $stime);
+                $display(" ===ERROR=== sky130_fd_io__top_gpio_ovtv2 :  Enable_h (= %b) and ENABLE_VDDIO (= %b) are complement of each other. This is an illegal combination as ENABLE_VDDIO and ENABLE_H are the same input signals IN different power domains %m", ENABLE_H, ENABLE_VDDIO, $stime);
             end
             else
                 if (msg_count_pad == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -663,7 +663,7 @@ begin
             else
                 if (msg_count_pad1 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -685,7 +685,7 @@ begin
             else
                 if (msg_count_pad2 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -707,7 +707,7 @@ begin
             else
                 if (msg_count_pad3 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -729,7 +729,7 @@ begin
             else
                 if (msg_count_pad4 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -751,7 +751,7 @@ begin
             else
                 if (msg_count_pad5 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -773,7 +773,7 @@ begin
             else
                 if (msg_count_pad6 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -795,7 +795,7 @@ begin
             else
                 if (msg_count_pad7 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -817,7 +817,7 @@ begin
             else
                 if (msg_count_pad8 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -839,7 +839,7 @@ begin
             else
                 if (msg_count_pad9 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -861,7 +861,7 @@ begin
             else
                 if (msg_count_pad10 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -883,7 +883,7 @@ begin
             else
                 if (msg_count_pad11 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
@@ -905,7 +905,7 @@ begin
             else
                 if (msg_count_pad12 == MAX_WARNING_COUNT+1)
                 begin
-                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the \message count has exceeded 100 %m",$stime);
+                    $display(" ===WARNING=== sky130_fd_io__top_gpio_ovtv2 :  Further WARNING messages will be suppressed as the message count has exceeded 100 %m",$stime);
                 end
         end
     end
