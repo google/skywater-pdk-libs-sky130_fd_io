@@ -34,9 +34,9 @@
 `ifdef USE_POWER_PINS
 
 `ifdef FUNCTIONAL
-`include "sky130_fd_io__top_sio_macro.pp.functional.v"
+`include "sky130_fd_io__top_sio_macro.functional.pp.v"
 `else  // FUNCTIONAL
-`include "sky130_fd_io__top_sio_macro.pp.behavioral.v"
+`include "sky130_fd_io__top_sio_macro.timing.pp.v"
 `endif // FUNCTIONAL
 
 `else  // USE_POWER_PINS
@@ -44,7 +44,7 @@
 `ifdef FUNCTIONAL
 `include "sky130_fd_io__top_sio_macro.functional.v"
 `else  // FUNCTIONAL
-`include "sky130_fd_io__top_sio_macro.behavioral.v"
+`include "sky130_fd_io__top_sio_macro.timing.v"
 `endif // FUNCTIONAL
 
 `endif // USE_POWER_PINS

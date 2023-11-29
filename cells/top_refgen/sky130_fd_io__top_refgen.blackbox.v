@@ -25,7 +25,7 @@
  *             differential input buffer in SIO and also
  *             the output buffer regulated output level (VOUTREF).
  *             Verilog HDL for "sky130_fd_io",
- *             "sky130_fd_io_top_refgen" "behavioral_tmp".
+ *             "sky130_fd_io_top_refgen" "timing_tmp".
  *
  * Verilog stub definition (black box without power pins).
  *

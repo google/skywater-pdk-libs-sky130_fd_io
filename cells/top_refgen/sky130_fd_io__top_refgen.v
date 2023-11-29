@@ -25,7 +25,7 @@
  *             differential input buffer in SIO and also
  *             the output buffer regulated output level (VOUTREF).
  *             Verilog HDL for "sky130_fd_io",
- *             "sky130_fd_io_top_refgen" "behavioral_tmp".
+ *             "sky130_fd_io_top_refgen" "timing_tmp".
  *
  * Verilog top module.
  *
@@ -38,9 +38,9 @@
 `ifdef USE_POWER_PINS
 
 `ifdef FUNCTIONAL
-`include "sky130_fd_io__top_refgen.pp.functional.v"
+`include "sky130_fd_io__top_refgen.functional.pp.v"
 `else  // FUNCTIONAL
-`include "sky130_fd_io__top_refgen.pp.behavioral.v"
+`include "sky130_fd_io__top_refgen.timing.pp.v"
 `endif // FUNCTIONAL
 
 `else  // USE_POWER_PINS
@@ -48,7 +48,7 @@
 `ifdef FUNCTIONAL
 `include "sky130_fd_io__top_refgen.functional.v"
 `else  // FUNCTIONAL
-`include "sky130_fd_io__top_refgen.behavioral.v"
+`include "sky130_fd_io__top_refgen.timing.v"
 `endif // FUNCTIONAL
 
 `endif // USE_POWER_PINS
